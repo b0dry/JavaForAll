@@ -54,9 +54,9 @@ public class DL {
 
 		// Find highest integer
 		if (arr.length > 0) {
-			for (int i = 0; i < arr.length; i++) {
-				if (result < arr[i])
-					result = arr[i];
+			for (int anArr : arr) {
+				if (result < anArr)
+					result = anArr;
 			}
 		}
 		// Display result
@@ -65,7 +65,7 @@ public class DL {
 
 	}
 
-	public static float[] fillArrayOfFloat(float[] arr, Scanner sc) {
+	static float[] fillArrayOfFloat(float[] arr, Scanner sc) {
 
 		for (int i = 0; i < arr.length; i++) {
 			System.out.println("Enter float number: ");
@@ -76,8 +76,8 @@ public class DL {
 
 	static float findFloatArraySum(float[] arr) {
 		float result = 0;
-		for (int i = 0; i < arr.length; i++) {
-			result = result + arr[i];
+		for (float anArr : arr) {
+			result = result + anArr;
 		}
 		System.out.println("The result is: " + result);
 		return result;
@@ -87,7 +87,7 @@ public class DL {
 		// Verify existence of char from a to z small caps;
 		// return true if not exist
 		boolean result = true;
-		for (int a = 0; a < arr.length; a++) {
+		for (int a : arr) {
 			if (arr[a] >= 'a' && arr[a] <= 'z') {
 				System.out.println("Letter: " + arr[a] + " is latin small letter");
 				result = false;
@@ -115,8 +115,8 @@ public class DL {
 
 	static boolean isItMatrix(int[][] arr) {
 		// Verifying if array is matrix
-		for (int i = 0; i < arr.length; i++) {
-			if (arr.length != arr[i].length) {
+		for (int[] anArr : arr) {
+			if (arr.length != anArr.length) {
 				System.out.println("The array is not square/matrix");
 				return false;
 			}
@@ -176,10 +176,10 @@ public class DL {
 
 	static int[] concatArrays(int[] arr1, int[] arr2) {
 		int[] arr = new int[(arr1.length + arr2.length)];
-		for (int i = 0; i < arr1.length; i++) {
+		for (int i : arr1) {
 			arr[i] = arr1[i];
 		}
-		for (int i = 0; i < arr2.length; i++) {
+		for (int i : arr2) {
 			arr[i + arr1.length] = arr[i];
 		}
 		return arr;
@@ -195,7 +195,7 @@ public class DL {
 			return fibonacci(number - 1) + fibonacci(number - 2);
 	}
 
-	public static void intArrayBubbleSort(int[] arr) {
+	static void intArrayBubbleSort(int[] arr) {
 		for (int i = 0; i < arr.length; i++) {
 			boolean hasASwap = false;
 			for (int j = 0; j < arr.length - 1 - i; j++) {
@@ -212,7 +212,7 @@ public class DL {
 		}
 	}
 
-	public static void intArraySelectionSort(int num[]) {
+	static void intArraySelectionSort(int num[]) {
 		int start = 0;
 		int end = num.length - 1;
 		for (int sortedCount = start; sortedCount < num.length; sortedCount++) {
