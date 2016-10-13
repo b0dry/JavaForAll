@@ -164,24 +164,23 @@ public class DL {
 		return (one + two) / 2;
 	}
 
-	static int[][] arrayWithZeros(int x, int y) {
-		int[][] arr = new int[x][y];
-		for (int i = 0; i < x; i++) {
-			for (int a = 0; a < y; a++) {
-				arr[i][a] = 0;
-			}
-		}
-		return arr;
-	}
+//	static int[][] arrayWithZeros(int x, int y) {
+//		int[][] arr = new int[x][y];
+//		for (int i = 0; i < x; i++) {
+//			for (int a = 0; a < y; a++) {
+//				arr[i][a] = 0;
+//			}
+//		}
+//		return arr;
+//	}
 
 	static int[] concatArrays(int[] arr1, int[] arr2) {
 		int[] arr = new int[(arr1.length + arr2.length)];
-		for (int i : arr1) {
-			arr[i] = arr1[i];
-		}
-		for (int i : arr2) {
-			arr[i + arr1.length] = arr[i];
-		}
+		System.arraycopy(arr1, 0, arr, 0, arr1.length);
+		System.arraycopy(arr2, 0, arr, arr1.length, arr2.length);
+//		for (int i = 0; i < arr2.length; i++)
+//			arr[i + arr1.length] = arr[i];
+
 		return arr;
 	}
 
