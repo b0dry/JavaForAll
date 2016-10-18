@@ -1,8 +1,7 @@
 package hackerrank;
 
-import javax.swing.text.StringContent;
-import java.io.*;
-import java.util.*;
+import java.util.Arrays;
+import java.util.Scanner;
 
 /**
  * Created by DDinkov on 17-Oct-16 4:36 PM.
@@ -34,17 +33,23 @@ public class JavaAnagrams {
         String a = sc.next();
         String b = sc.next();
         sc.close();
+
         boolean answer = isAnagram(a, b);
         System.out.println((answer) ? "Anagram" : "Not Anagram");
 
     }
 
-    static boolean isAnagram(String a, String b) {
-        String aSorted = "";
-        boolean result = false;
+    private static boolean isAnagram(String a, String b) {
+        char[] aChar = a.toLowerCase().toCharArray();
+        char[] bChar = b.toLowerCase().toCharArray();
+
+        Arrays.sort(aChar);
+        Arrays.sort(bChar);
+
+        String aSorted = new String(aChar);
+        String bSorted = new String(bChar);
+
         // Complete the function by writing your code here.
-        if (a.equalsIgnoreCase(b))
-            return true;
-        return false;
+        return aSorted.equals(bSorted);
     }
 }

@@ -21,7 +21,6 @@ public class IntroToConditionalStatements {
                 ans = "Weird";
             else
                 ans = "Not Weird";
-
         }
         System.out.println(ans);
 
