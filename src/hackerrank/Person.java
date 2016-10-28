@@ -1,35 +1,27 @@
 package hackerrank;
 
 /**
- * Created by DDinkov on 20-Oct-16 4:18 PM.
+ * Created by DDinkov on 28-Oct-16 9:47 AM.
+ * https://www.hackerrank.com/challenges/30-inheritance
  */
-public class Person {
-    private int age;
+class Person {
+    protected String firstName;
+    protected String lastName;
+    protected int idNumber;
 
-    public Person(int initialAge) {
-        if (initialAge < 0) {
-            System.out.println("Age is not valid, setting age to 0.");
-            this.age = 0;
-        } else {
-            this.age = initialAge;
-        }
-        // Add some more code to run some checks on initialAge
+    // Constructor
+    Person(String firstName, String lastName, int identification) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.idNumber = identification;
     }
 
-    public void amIOld() {
-        // Write code determining if this person's age is old and print the correct statement:
-        if (this.age < 13)
-            System.out.println("You are young.");
-        else if (age >= 13 && age < 18)
-            System.out.println("You are a teenager.");
-        else
-            System.out.println("You are old.");
-
+    // Print person data
+    public void printPerson() {
+        System.out.println(
+                "Name: " + lastName + ", " + firstName
+                        + "\nID: " + idNumber);
     }
 
-    public void yearPasses() {
-        // Increment this person's age.
-        this.age++;
-    }
 
 }

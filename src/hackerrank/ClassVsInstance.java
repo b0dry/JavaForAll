@@ -13,7 +13,7 @@ public class ClassVsInstance {
         int T = sc.nextInt();
         for (int i = 0; i < T; i++) {
             int age = sc.nextInt();
-            Person p = new Person(age);
+            Person2 p = new Person2(age);
             p.amIOld();
             for (int j = 0; j < 3; j++) {
                 p.yearPasses();
