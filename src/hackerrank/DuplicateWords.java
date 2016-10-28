@@ -23,6 +23,7 @@ public class DuplicateWords {
             while(m.find( )){
                 input =input.replaceAll(m.group(),m.group(1));
                 //findMatch = false;
+
             }
             System.out.println(input);
             testCases--;
