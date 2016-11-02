@@ -9,8 +9,8 @@ import java.util.Scanner;
 class Difference {
     private int[] elements;
     public int maximumDifference;
-    private int minValue = Integer.MIN_VALUE;
-    private int maxValue = Integer.MAX_VALUE;
+    private int minValue = Integer.MAX_VALUE;
+    private int maxValue = Integer.MIN_VALUE;
 
     Difference(int[] arr) {
         this.elements = arr;
@@ -18,6 +18,14 @@ class Difference {
 
     void computeDifference() {
 
+        for (int value: elements) {
+            if (value > maxValue)
+                maxValue = value;
+            if (value < minValue)
+                minValue = value;
+        }
+
+        maximumDifference = Math.abs(maxValue - minValue);
 
     }
 
