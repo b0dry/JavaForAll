@@ -4,7 +4,7 @@ package hackerrank;
  * Created by DDinkov on 03-Nov-16 2:27 PM.
  * https://www.hackerrank.com/challenges/30-more-exceptions
  */
-class Calculator {
+class CalculatorDay17 {
 
     int power(int a, int pow) throws Exception {
         if (a < 0 || pow < 0) {

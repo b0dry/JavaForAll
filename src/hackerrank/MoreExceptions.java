@@ -16,7 +16,7 @@ public class MoreExceptions {
         {
             int n = in.nextInt();
             int p = in.nextInt();
-            Calculator myCalculator = new Calculator();
+            CalculatorDay17 myCalculator = new CalculatorDay17();
             try
             {
                 int ans=myCalculator.power(n,p);
