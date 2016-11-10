@@ -16,8 +16,8 @@ public class QueuesAndStacks {
         // Convert input String to an array of characters:
         char[] s = input.toCharArray();
 
-        // Create a Solution18 object:
-        Solution18 p = new Solution18();
+        // Create a SolutionDay18 object:
+        SolutionDay18 p = new SolutionDay18();
 
         // Enqueue/Push all chars to their respective data structures:
         for (char c : s) {

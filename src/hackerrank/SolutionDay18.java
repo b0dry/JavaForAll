@@ -7,7 +7,7 @@ import java.util.LinkedList;
  * Created by DDinkov on 04-Nov-16 11:33 AM.
  * https://www.hackerrank.com/challenges/30-queues-stacks
  */
-class Solution18 {
+class SolutionDay18 {
     Stack<Character> s = new Stack<>();
     private Queue<Character> q = new LinkedList<>();
 
