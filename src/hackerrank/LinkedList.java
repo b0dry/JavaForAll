@@ -6,11 +6,11 @@ import java.util.Scanner;
  * Created by DDinkov on 02-Nov-16 4:23 PM.
  * https://www.hackerrank.com/challenges/30-linked-list
  */
-class Node {
+class NodeLinkedList {
     int data;
-    Node next;
+    NodeLinkedList next;
 
-    Node(int d) {
+    NodeLinkedList(int d) {
         data = d;
         next = null;
     }
@@ -18,12 +18,12 @@ class Node {
 
 public class LinkedList {
 
-    public static Node insert(Node head, int data) {
+    public static NodeLinkedList insert(NodeLinkedList head, int data) {
         //Complete this method
         if (head == null)
-            return new Node(data);
+            return new NodeLinkedList(data);
         else if (head.next == null)
-            head.next = new Node(data);
+            head.next = new NodeLinkedList(data);
         else
             insert(head.next, data);
 
@@ -31,8 +31,8 @@ public class LinkedList {
     }
 
 
-    public static void display(Node head) {
-        Node start = head;
+    public static void display(NodeLinkedList head) {
+        NodeLinkedList start = head;
         while (start != null) {
             System.out.print(start.data + " ");
             start = start.next;
@@ -41,7 +41,7 @@ public class LinkedList {
 
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
-        Node head = null;
+        NodeLinkedList head = null;
         int N = sc.nextInt();
 
         while (N-- > 0) {
