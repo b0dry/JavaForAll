@@ -1,6 +1,6 @@
 package hackerrank;
 
-import java.util.Scanner;
+         import java.util.Scanner;
 
 /**
  * Created by DDinkov on 21-Oct-16 2:54 PM.
@@ -18,6 +18,5 @@ public class Arrays {
         for (int i = arr.length - 1; i >= 0; i--) {
             System.out.printf("%d ", arr[i]);
         }
-
     }
 }
