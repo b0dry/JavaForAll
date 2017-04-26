@@ -1,6 +1,6 @@
 package hackerrank;
 
-         import java.util.Scanner;
+import java.util.Scanner;
 
 /**
  * Created by DDinkov on 21-Oct-16 2:54 PM.

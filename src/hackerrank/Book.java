@@ -5,8 +5,6 @@ package hackerrank;
  * https://www.hackerrank.com/challenges/30-abstract-classes
  */
 
-import java.util.*;
-
 abstract class Book {
     String title;
     String author;

@@ -26,7 +26,7 @@ public class Testing {
         System.out.println(t);
         //Cycle for 't' lectures
         for (int i = 0; i < t; i++) {
-            Lecture lecture = new Lecture ();
+            Lecture lecture = new Lecture();
             System.out.println(lecture.countedStudents + " " + lecture.cancellationThreshold);
             System.out.println(lecture.arrivalTimeList);
 
@@ -45,9 +45,9 @@ public class Testing {
 
         String arrivalTimeList = generateString(countedStudents);
 
-        private static String generateString (int cStudents) {
+        private static String generateString(int cStudents) {
             StringBuilder resultString = new StringBuilder("-1 0 1 ");
-            for (int i = 3;i < cStudents; i++){
+            for (int i = 3; i < cStudents; i++) {
                 resultString.append(randInt(-1000, 1000)).append(" ");
             }
             return resultString.toString();

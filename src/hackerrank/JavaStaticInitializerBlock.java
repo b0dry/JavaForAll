@@ -1,7 +1,7 @@
 package hackerrank;
 
 
-import java.util.*;
+import java.util.Scanner;
 
 /**
  * Created by DDinkov on 14-Oct-16 5:21 PM.
@@ -13,25 +13,25 @@ public class JavaStaticInitializerBlock {
     private static int B = input.nextInt();
     private static int H = input.nextInt();
 
-    public static void main(String[] args){
-        if(flag){
-            int area=B*H;
-            System.out.print(area);
-        }
-
-    }//end of main
-
-    static{
-        try{
-            if(B <= 0 || H <= 0){
+    static {
+        try {
+            if (B <= 0 || H <= 0) {
                 flag = false;
                 throw new Exception("Breadth and height must be positive");
             }
-        }catch(Exception e){
+        } catch (Exception e) {
             System.out.println(e);
         }
 
     }
+
+    public static void main(String[] args) {
+        if (flag) {
+            int area = B * H;
+            System.out.print(area);
+        }
+
+    }//end of main
 
 }//end of class
 

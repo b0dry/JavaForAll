@@ -7,8 +7,8 @@ import java.util.Scanner;
  * https://www.hackerrank.com/challenges/30-scope
  */
 class Difference {
-    private int[] elements;
     public int maximumDifference;
+    private int[] elements;
     private int minValue = Integer.MAX_VALUE;
     private int maxValue = Integer.MIN_VALUE;
 
@@ -18,7 +18,7 @@ class Difference {
 
     void computeDifference() {
 
-        for (int value: elements) {
+        for (int value : elements) {
             if (value > maxValue)
                 maxValue = value;
             if (value < minValue)

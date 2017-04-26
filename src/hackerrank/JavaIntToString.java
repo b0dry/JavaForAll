@@ -1,17 +1,18 @@
 package hackerrank;
 
 
-import java.util.*;
-import java.security.*;
+import java.security.Permission;
+import java.util.Scanner;
+
 /**
  * Created by dobromirdinkov on 10/15/16.
  * https://www.hackerrank.com/challenges/java-int-to-string
  * You are given an integer, you have to convert it into a string.
- *
+ * <p>
  * Please complete the partially completed code in the editor.
  * If your code successfully converts  into a string  the code will print "Good job".
  * Otherwise it will print "Wrong answer".
- *
+ * <p>
  * can range between  to  inclusive.
  */
 public class JavaIntToString {
@@ -21,7 +22,7 @@ public class JavaIntToString {
 
         try {
             Scanner in = new Scanner(System.in);
-            int n = in .nextInt();
+            int n = in.nextInt();
             in.close();
             //String s=???; Complete this line below
             String s = Integer.toString(n);
@@ -41,11 +42,6 @@ public class JavaIntToString {
 //The following class will prevent you from terminating the code using exit(0)!
 class DoNotTerminate {
 
-    public static class ExitTrappedException extends SecurityException {
-
-        private static final long serialVersionUID = 1;
-    }
-
     public static void forbidExit() {
         final SecurityManager securityManager = new SecurityManager() {
             @Override
@@ -56,5 +52,10 @@ class DoNotTerminate {
             }
         };
         System.setSecurityManager(securityManager);
+    }
+
+    public static class ExitTrappedException extends SecurityException {
+
+        private static final long serialVersionUID = 1;
     }
 }

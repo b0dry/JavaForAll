@@ -1,10 +1,6 @@
 package hackerrank;
 
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+import java.util.Scanner;
 
 /**
  * Created by DDinkov on 14-Oct-16 2:28 PM.

@@ -1,7 +1,7 @@
 package hackerrank;
 
 import java.util.Scanner;
-import java.util.regex.*;
+import java.util.regex.Pattern;
 
 /**
  * Created by DDinkov on 18-Oct-16 4:32 PM.

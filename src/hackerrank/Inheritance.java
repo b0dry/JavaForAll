@@ -14,7 +14,7 @@ public class Inheritance {
         int id = scan.nextInt();
         int numScores = scan.nextInt();
         int[] testScores = new int[numScores];
-        for(int i = 0; i < numScores; i++){
+        for (int i = 0; i < numScores; i++) {
             testScores[i] = scan.nextInt();
         }
         scan.close();

@@ -12,9 +12,9 @@ public class SolutionDay19 {
         int n = scan.nextInt();
         scan.close();
 
-        AdvancedArithmetic myCalculator =  new CalculatorDay19();
+        AdvancedArithmetic myCalculator = new CalculatorDay19();
         int sum = myCalculator.divisorSum(n);
-        System.out.println("I implemented: " + myCalculator.getClass().getInterfaces()[0].getName() );
+        System.out.println("I implemented: " + myCalculator.getClass().getInterfaces()[0].getName());
         System.out.println(sum);
     }
 }

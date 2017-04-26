@@ -1,10 +1,6 @@
 package hackerrank;
 
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+import java.util.Scanner;
 
 /**
  * Created by DDinkov on 14-Oct-16 3:50 PM.
@@ -16,7 +12,7 @@ public class JavaLoopsI {
         int N = in.nextInt();
 
         for (int i = 1; i <= 10; i++) {
-            System.out.printf("%d x %d = %d%n", N, i, N*i);
+            System.out.printf("%d x %d = %d%n", N, i, N * i);
         }
     }
 }

@@ -37,7 +37,7 @@ package hackerrank; /**
 
 //import java.io.*;
 
-import java.util.*;
+import java.util.Scanner;
 //import java.text.*;
 //import java.math.*;
 //import java.util.regex.*;
@@ -57,7 +57,7 @@ public class PlusMinus {
         int zeros = 0;
         for (int i : arr) {
             if (i > 0)
-                positive = positive+1;
+                positive = positive + 1;
             else if (i < 0)
                 negative++;
             else

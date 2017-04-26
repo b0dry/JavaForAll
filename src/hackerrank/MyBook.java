@@ -6,7 +6,8 @@ package hackerrank;
  */
 class MyBook extends Book {
     int price;
-    MyBook (String title, String author, int price) {
+
+    MyBook(String title, String author, int price) {
         super(title, author);
         this.price = price;
     }

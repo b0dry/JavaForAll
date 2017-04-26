@@ -1,6 +1,5 @@
 package hackerrank;
 
-import java.math.BigInteger;
 import java.util.Scanner;
 
 /**
@@ -15,15 +14,15 @@ public class RunningTimeAndComplexity {
         int numberOfTests = sc.nextInt();
         for (int test = 0; test < numberOfTests; test++) {
             if (checkDividers(sc.nextLong())) {
-                System.out.println ("Not prime");
+                System.out.println("Not prime");
             } else {
-                System.out.println ("Prime");
+                System.out.println("Prime");
             }
         }
         sc.close();
     }
 
-    public static boolean checkDividers (long number) {
+    public static boolean checkDividers(long number) {
         if (number == 2)
             return false;
 

@@ -4,8 +4,9 @@
  */
 package hackerrank;
 
-import java.util.*;
 import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Scanner;
 
 class NodeDay23 {
     NodeDay23 left, right;
@@ -26,8 +27,8 @@ class BSTLevelOrderTraversal {
         while (!q.isEmpty()) {
             NodeDay23 n = q.remove();
             System.out.print(n.data + " ");
-            if (n.left!=null) q.add(n.left);
-            if (n.right!=null) q.add(n.right);
+            if (n.left != null) q.add(n.left);
+            if (n.right != null) q.add(n.right);
         }
     }
 

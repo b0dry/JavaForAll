@@ -11,18 +11,18 @@ public class bitwiseAND {
         Scanner in = new Scanner(System.in);
         int t = in.nextInt();
         System.out.println();
-        for(int a0 = 0; a0 < t; a0++){
+        for (int a0 = 0; a0 < t; a0++) {
             int result = 0;
             int n = in.nextInt();
             int k = in.nextInt();
             for (int i = 1; i <= n; i++) {
                 for (int a = 1; a < i; a++) {
-                    int tmp = i&a;
+                    int tmp = i & a;
                     if (result < tmp & tmp < k)
                         result = tmp;
                 }
             }
-        System.out.println(result);
+            System.out.println(result);
         }
     }
 }

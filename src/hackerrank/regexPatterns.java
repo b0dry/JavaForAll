@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
 /**
  * Consider a database table, Emails, which has the attributes First Name and Email ID.
  * Given  rows of data simulating the Emails table, print an alphabetically-ordered list of people whose email address ends in .
@@ -16,7 +17,7 @@ public class regexPatterns {
         Scanner in = new Scanner(System.in);
         List<String> stringList = new ArrayList<>();
         int N = in.nextInt();
-        for(int a0 = 0; a0 < N; a0++){
+        for (int a0 = 0; a0 < N; a0++) {
             String firstName = in.next();
             String emailID = in.next();
             Matcher m = p.matcher(emailID);
@@ -25,7 +26,7 @@ public class regexPatterns {
                 stringList.add(firstName);
         }
         Collections.sort(stringList);
-        for(String tmp : stringList){
+        for (String tmp : stringList) {
             System.out.println(tmp);
         }
     }

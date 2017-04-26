@@ -1,7 +1,5 @@
 package hackerrank;
 
-import com.sun.org.apache.xpath.internal.operations.NotEquals;
-
 import java.util.Scanner;
 
 /**

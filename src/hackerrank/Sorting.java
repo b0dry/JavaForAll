@@ -6,8 +6,9 @@ import java.util.Scanner;
  * Created by DDinkov on 07-Nov-16 3:12 PM.
  * https://www.hackerrank.com/challenges/30-sorting
  */
- public class Sorting {
-        static int totalSwaps = 0;
+public class Sorting {
+    static int totalSwaps = 0;
+
     public static void main(String[] args) {
         /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
         Scanner sc = new Scanner(System.in);
@@ -36,10 +37,10 @@ import java.util.Scanner;
         }
         System.out.printf("Array is sorted in %d swaps.%n", totalSwaps);
         System.out.printf("First Element: %d%n", a[0]);
-        System.out.printf("Last Element: %d%n", a[n-1]);
+        System.out.printf("Last Element: %d%n", a[n - 1]);
     }
 
-    private static int[] swap(int[]a, int i, int i1) {
+    private static int[] swap(int[] a, int i, int i1) {
         int temp = a[i];
         a[i] = a[i1];
         a[i1] = temp;
