@@ -14,7 +14,7 @@ public class regexPatterns {
     public static void main(String[] args) {
         Pattern p = Pattern.compile(".*@gmail\\.com");
         Scanner in = new Scanner(System.in);
-        List<String> l = new ArrayList<>();
+        List<String> stringList = new ArrayList<>();
         int N = in.nextInt();
         for(int a0 = 0; a0 < N; a0++){
             String firstName = in.next();
@@ -22,10 +22,10 @@ public class regexPatterns {
             Matcher m = p.matcher(emailID);
             if (m.find())
                 //System.out.println(firstName);
-                l.add(firstName);
+                stringList.add(firstName);
         }
-        Collections.sort(l);
-        for(String tmp : l){
+        Collections.sort(stringList);
+        for(String tmp : stringList){
             System.out.println(tmp);
         }
     }
